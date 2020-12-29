@@ -1841,12 +1841,10 @@ li.list-group-item.has-sub:not(:first-child)::before {
 }
 
 .form-check {
-  padding-right: 2rem;
+  padding-right: 2.6rem;
 }
 
-.form-check .form-check-input {
-  margin-right: -2rem !important;
-}
+
 
 /* H Style */
 

@@ -1,7 +1,19 @@
 
 /*----------------------- H New Style -------------------------*/
-
-
+/* For Light Style */
+.img-back{
+    background-image: url('../images/light/login-back.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.signin-container{
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* till here*/
 .red-color {
     color: red;
 }
@@ -296,12 +308,12 @@
 }
 
 .btn-st3{
-	background-color:#333738;
+	background-color:#262B56;
 	color:#fff;
 }
 
 .btn-st3:hover,.btn-st3:focus{
-	background-color:#222525;
+	background-color:#343b77;
 	color:white;
 }
 
@@ -3308,6 +3320,34 @@ table > thead > tr {
 
 .path li.active{
     color:black;
+}
+.warn-div{
+    font-size:32px;
+    color:#495058;
+    text-align: center;
+}
+.another-card{
+    box-shadow: 3px 3px 20px 7px #00000017;
+    border-radius: 8px;
+}
+.another-card .card-body{
+    padding: 4.25rem;
+}
+.card.signin-card{
+    background-color:rgba(191, 191, 204, 50%);
+    color:#262B56;
+}
+.signin-card .card-body{
+    padding: 0.50rem;
+}
+.fa-user, .fa-lock{
+    position: absolute;
+    right: 85%;
+    bottom: 10px;
+}
+
+.changed-navbar{
+    padding-top: 300px !important;
 }
 
 /*--------------------- H Responsive Style ----------------------*/
