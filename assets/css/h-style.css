@@ -2,11 +2,7 @@
 /*----------------------- H New Style -------------------------*/
 /* For Light Style */
 .img-back{
-    background-image: url('../images/light/login-back.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    background: url('../images/light/login-back.png') repeat-x top center #F3F3F6;
 }
 .signin-container{
     max-width: 250px;
