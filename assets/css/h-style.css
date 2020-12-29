@@ -13,6 +13,34 @@
     margin-left: auto;
     margin-right: auto;
 }
+.warn-div{
+    font-size:32px;
+    color:#495058;
+    text-align: center;
+}
+.another-card{
+    box-shadow: 3px 3px 20px 7px #00000017;
+    border-radius: 8px;
+}
+.another-card .card-body{
+    padding: 4.25rem;
+}
+.card.signin-card{
+    background-color:rgba(191, 191, 204, 50%);
+    color:#262B56;
+}
+.signin-card .card-body{
+    padding: 0.50rem;
+}
+.fa-user, .fa-lock{
+    position: absolute;
+    right: 85%;
+    bottom: 10px;
+}
+
+.changed-navbar{
+    padding-top: 300px !important;
+}
 /* till here*/
 .red-color {
     color: red;
@@ -3321,34 +3349,7 @@ table > thead > tr {
 .path li.active{
     color:black;
 }
-.warn-div{
-    font-size:32px;
-    color:#495058;
-    text-align: center;
-}
-.another-card{
-    box-shadow: 3px 3px 20px 7px #00000017;
-    border-radius: 8px;
-}
-.another-card .card-body{
-    padding: 4.25rem;
-}
-.card.signin-card{
-    background-color:rgba(191, 191, 204, 50%);
-    color:#262B56;
-}
-.signin-card .card-body{
-    padding: 0.50rem;
-}
-.fa-user, .fa-lock{
-    position: absolute;
-    right: 85%;
-    bottom: 10px;
-}
 
-.changed-navbar{
-    padding-top: 300px !important;
-}
 
 /*--------------------- H Responsive Style ----------------------*/
 @media(max-width:1040px){
