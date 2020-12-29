@@ -3,6 +3,8 @@
 /* For Light Style */
 .img-back{
     background: url('../images/light/login-back.png') repeat-x top center #F3F3F6;
+    padding-top:40px;
+    padding-bottom:40px;
 }
 .signin-container{
     max-width: 250px;
@@ -19,7 +21,7 @@
     border-radius: 8px;
 }
 .another-card .card-body{
-    padding: 4.25rem;
+    padding: 1.25rem;
 }
 .card.signin-card{
     background-color:rgba(191, 191, 204, 50%);
@@ -35,7 +37,10 @@
 }
 
 .changed-navbar{
-    padding-top: 300px !important;
+    padding-top: 250px !important;
+}
+.signin-container .form-control{
+    padding-left:30px;
 }
 /* till here*/
 .red-color {
