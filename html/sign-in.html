@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="image/x-icon" rel="shortcut icon" href="./favicon.ico">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="theme-color" content="#0c7c5a">
+	<title>مراسلات</title>
+	<link type="image/x-icon" rel="shortcut icon" href="./favicon.ico">
+
+	<!-- Bootstrap RTL -->
+	<link href="../assets/bootstrap/css/bootstrap.min.rtl.css" rel="stylesheet">
+	<link href="../assets/bootstrap/css/bootstrap.form.rtl.css" rel="stylesheet">
+	<link href="../assets/bootstrap/css/bootstrap.grid.rtl.css" rel="stylesheet">
+
+	<!-- Main -->
+	<link href="../assets/css/main.css" rel="stylesheet">
+
+	<!-- Vertical Menu -->
+	<link rel="stylesheet" type="text/css" href="../assets/plugins/vertical-menu/vertical-menu.min.css">
+
+	<!-- Confirm -->
+	<link rel="stylesheet" type="text/css" href="../assets/plugins/confirm/jquery-confirm.min.css" />
+
+	<!-- RTL -->
+	<link href="../assets/css/d-rtl.css" rel="stylesheet">
+
+</head>
+
+<body class="vertical-layout vertical-menu 2-columns  menu-flipped fixed-navbar img-back" data-open="click"
+      data-menu="vertical-menu" data-col="2-columns" dir="rtl">
+
+	<div class="content_container">
+        <div class="d-flex-responsive justify-content-center">
+            <div class="signin-container">
+                <div class="d-flex flex-row logo-header justify-content-center mb-5">
+                    <div class=""><img src="../assets/images/light/logo-light.svg" title="" alt="" class="logo-light"></div>
+                    <div class="divider mx-3"></div>
+                    <div class="my-1"><img src="../assets/images/light/vip-icon.svg" title="" alt="" class="logo-vip"></div>
+                </div>
+                <div class="form-row mb-3">
+                    <div class="form-group col-xs-12">
+                        <label for="">اسم المستخدم</label>
+                        <i class="far fa-user"></i>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-xs-12">
+                        <label for="">كلمة المرور</label>
+                        <i class="fas fa-lock"></i>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label mt-1" for="flexCheckDefault">
+                            حفظ دخول المستخدم
+                        </label>
+                    </div>
+                </div>
+                <div class="card signin-card mb-3">
+                    <div class="card-content">
+                        <div class="card-body signin-cardbody">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label mt-1" for="flexCheckDefault">
+                                    ارسال رمز التحقق بريد الالكتروني
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label mt-1" for="flexCheckDefault">
+                                    ارسال رمز التحقق رسالة نصية
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <button class="btn btn-lg btn-st3 w-100">الدخول</button>
+                </div>
+            </div>
+        </div>
+
+
+	<link href="../assets/js/jquery-ui-1.9.2/css/base/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+
+	<!-- jQuery -->
+	<script src="../assets/js/jquery.js"></script>
+	<script src="../assets/js/jquery-ui-1.9.2/js/jquery-ui-1.9.2.custom.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../assets/js/bootstrap-select.js"></script>
+	<script src="../assets/js/jquery.matchHeight-min.js"></script>
+	<script src="../assets/js/aos.js"></script>
+	<script src="../assets/js/jquery.slimscroll.min.js"></script>
+	<script src="../assets/js/app.js"></script>
+
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		});
+	</script>
+
+	<!--End of Jquery-->
+	<!-- Vertical Menu css-->
+	<script src="../assets/plugins/vertical-menu/vendors.min.js"></script>
+	<script src="../assets/plugins/vertical-menu/app-menu.min.js"></script>
+	<script src="../assets/plugins/vertical-menu/app.min.js"></script>
+
+	<!-- jquery-confirm JS -->
+	<script type="text/javascript" src="../assets/plugins/confirm/jquery-confirm.min.js"></script>
+
+	<script type="text/javascript">
+		$('.grid-1').on('click', function () {
+			$.confirm({
+				columnClass: 'medium',
+				closeIcon: true,
+				title: 'العنوان هنا',
+				content: 'نص المحتوى ياتي هنا نص المحتوى ياتي هنا ',
+				typeAnimated: true,
+				rtl: true,
+				buttons: {
+					tryAgain: {
+						text: 'حاول مره أخرى',
+						btnClass: 'btn-st1 btn-lg',
+						action: function () {
+						}
+					},
+
+					close: {
+						text: 'إغلاق',
+						btnClass: 'btn-st2 btn-lg',
+						close: function () {
+						}
+					},
+
+				}
+			}); // empty because its default.
+		});
+	</script>
+
+	<!--Header Script-->
+	<script>
+		$(function () {
+			$('[data-toggle-second="tooltip"]').tooltip();
+		});
+	</script>
+
+	<script src="../assets/js/apex/apexcharts.min.js"></script>
+	<script src="../assets/js/apex/chart-apex.js"></script>
+
+
+
+
+</body>
+
+</html>
