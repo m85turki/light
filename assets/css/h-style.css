@@ -3,13 +3,18 @@
 /* For Light Style */
 .img-back{
     background: url('../images/light/login-back.png') repeat-x top center #F3F3F6;
-    padding-top:40px;
-    padding-bottom:40px;
+}
+.img-back2{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../images/light/login-and-another.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .signin-container{
     max-width: 250px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .warn-div{
     font-size:32px;
@@ -30,18 +35,23 @@
 .signin-card .card-body{
     padding: 0.50rem;
 }
-.fa-user, .fa-lock{
+.la-user, .la-lock{
     position: absolute;
     right: 85%;
     bottom: 10px;
+}
+.la-user{
+    font-size:17px;
 }
 
 .changed-navbar{
     padding-top: 250px !important;
 }
+
 .signin-container .form-control{
     padding-left:30px;
 }
+
 /* till here*/
 .red-color {
     color: red;
@@ -3725,6 +3735,9 @@ table > thead > tr {
     }
 	.name2{
 	display: block;
+    }
+    .img-back2{
+        background-size:200% 90%;
     }
 }
 }
