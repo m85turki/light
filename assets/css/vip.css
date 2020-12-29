@@ -1,0 +1,108 @@
+.menu-vip{
+    line-height: 1.5rem;
+    border-bottom: 1px solid #DDDDE5;
+}
+
+.mv-list{
+    margin: 0px 5px 10px 5px;
+    display: block;
+    min-width: 120px;
+}
+
+.mv-list a{
+    display: block;
+    background: #FFFFFF;
+    border: 1px solid #DDDDE5;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+.mv-list a .mv-label{
+    font-size: 11pt;
+    color: #29504D;
+    white-space: nowrap;
+}
+
+.mv-list a .mv-label .number{
+    background: #27A8E0;
+    border-radius: 5px;
+    padding: 4px 3px 0px 3px;
+    margin-right: 5px;
+    color: #FFFFFF;
+    font-size: 9pt;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.mv-list a .mv-icon{
+    font-size: 15pt;
+    margin-bottom: 7px;
+    background: #E9E9EE;
+    border-radius: 50%;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+.mv-list a:hover{
+    background: #DEE2E5;
+    border: 1px solid#DEDFE6;
+}
+
+.mv-list a:hover .mv-icon{
+    background: #CCD3D6;
+}
+
+
+.mv-list.active a{
+    background: #DEE2E5;
+    border: 1px solid #FFFFFF;
+}
+
+.mv-list.active a .mv-icon{
+    background: #CCD3D6;
+}
+
+/* main.css */
+.NotRead .box {
+    background: #ffffff !important;
+}
+
+/* new.css */
+.correspondence-icon {
+    padding-bottom: 0px !important;
+}
+
+.three .f-line {
+    width: auto;
+    border-bottom: solid 1px #EFEFEF;
+    background: #F3F3F6 !important;
+    margin-bottom: 4px !important;
+    margin-right: -11px !important;
+    margin-left: -11px !important;
+    padding-right: 11px !important;
+    padding-left: 11px !important;
+}
+
+
+
+/* Table */
+
+table > thead > tr {
+    color: #F9F9F9 !important;
+    background-color: #00A05A !important;
+}
+
+td.td-border-left {
+    border-left: 1px solid #ddd;
+}
+
+td.td-border-right {
+    border-right: 1px solid #ddd;
+}
+
+.min{
+    min-width: 40px;
+    height: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
