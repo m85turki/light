@@ -300,8 +300,8 @@
 			
 			<div class="white-line-bottom d-none d-md-block">
 			<div class="menu-vip d-flex flex-row flex-wrap justify-content-center align-items-center">
-				<div class="mv-list">
-					<a href="#">
+				<div class="mv-list selected">
+					<a href="#" class="">
 						<div class="d-flex flex-column justify-content-center align-items-center">
 							<div class="mv-icon d-flex justify-content-center align-items-center">
 								<img src="../assets/images/light/menu/performance-measure.svg">
@@ -423,28 +423,113 @@
 											<i class="fas fa-search"></i>
 											بحث
 										</a>
-										<a class="dashed-circle filter-target" href="#">
+										<a class="dashed-circle filter-target">
 											<i class="icon-filter"></i>
 											فلترة
 										</a>
-										<a class="dashed-circle sort-target" href="#">
+										<a class="dashed-circle sort-target">
 											<i class="icon-sort"></i>
 											ترتيب حسب
 										</a>
-										<div class="toggling-menu">
+																<div class="toggling-menu">
 											<a href="#" class="active system_1"><i class="icon-grid"></i></a>
 											<a href="#" class="grid_system"><i class="icon-list"></i></a>
 										</div>
 									</div>
 								</div>
 							</div>
+							<div class="mx-md-3 mx-3">
+								<div class="filter-box filter white-container mt-2 pb-2">
+									<form>
+										<div class="form-row">
+											<div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12">
+												<label for="">موظف مفوض له</label>
+												<select placeholder="اختر" id="inputState" class="form-control">
+													<option selected="">الكل</option>
+													<option>.....</option>
+												</select>
+							
+											</div>
+							
+											<div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12 align-self-end">
+												<label for="">الإدارة المفوض لها</label>
+												<select placeholder="اختر" id="inputState" class="form-control">
+													<option selected="">الكل</option>
+													<option>.....</option>
+												</select>
+											</div>
+											<div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12 align-self-end">
+												<label for="">حالة التفويض</label>
+												<select placeholder="اختر" id="inputState4" class="form-control">
+													<option selected="">الكل</option>
+													<option>.....</option>
+												</select>
+											</div>
+											<div class="form-group col-lg-3 col-md-6 col-sm-6 col-xs-12  align-self-end">
+												<div class="form-row mx-0">
+													<div class="col-sm-6 col-xs-12 pr-sm-2 pl-sm-0 px-0">
+														<label for="">التاريخ من</label>
+														<div class="input-group">
+															<input type="text" class="form-control">
+															<div class="input-group-append">
+																<span class="input-group-text hyperlink ">
+																	<a href="#"><i class="icon-calendar"></i></a>
+																</span>
+															</div>
+							
+														</div>
+													</div>
+							
+													<div class="col-sm-6 col-xs-12 pl-sm-2 pr-sm-0 px-0">
+														<label for="">التاريخ إلى</label>
+														<div class="input-group">
+															<input type="text" class="form-control">
+															<div class="input-group-append">
+																<span class="input-group-text hyperlink">
+																	<a href="#"><i class="icon-calendar"></i></a>
+																</span>
+															</div>
+														</div>
+													</div>
+							
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="filter-box search white-container mt-2 pb-2">
+									<form>
+										<div class="form-row">
+											<div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12">
+							
+												<label for="">تاريخ بداية التفويض</label>
+												<select placeholder="اختر" id="inputState2" class="form-control">
+													<option selected="">الكل</option>
+													<option>.....</option>
+												</select>
+							
+											</div>
+							
+											<div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12 align-self-end">
+												<label for="">تاريخ نهاية التفويض</label>
+												<select placeholder="اختر" id="inputState3" class="form-control">
+													<option selected="">الكل</option>
+													<option>.....</option>
+												</select>
+											</div>
+										</div>
+							
+									</form>
+								</div>
+							</div>
+						
 						</div>
 						<div class="content_container">
 							<!-- Tab panes -->
 							<div class="tab-content">
 								<div role="tabpanel" class="tab-pane active" id="sub-tab-1">
-									<div class="boxes px-md-2">
-										<div class="d-flex flex-wrap mx-auto mx-md-4">
+									<div class="boxes">
+										<div class="d-flex flex-wrap mx-auto">
 											<div class="box-grid">
 												<div class="box gray animated zoomIn buttons-action">
 					
@@ -2084,6 +2169,49 @@
 	<script src="../assets/js/apex/chart-apex.js"></script>
 
 
+	<script>
+		$(function () {
+			$(".grid_system").click(function () {
+				$(".boxes").addClass("full");
+			});
+			$(".system_1").click(function () {
+				$(".boxes").removeClass("full");
+			});
+		});
+
+	</script>
+	<script>
+		$(function () {
+			$(window).resize(function () {
+				if (window.innerWidth < 719) {
+					$('.boxes').removeClass('full');
+					$('.grid_system').removeClass('active');
+					$('.system_1').addClass('active');
+				}
+			});
+		});
+
+
+	</script>
+  
+<!-- sort and filter scripts-->
+<script>
+	$(document).ready(function () {
+		$('.filter-target').click(function () {
+			$('.filter-box.filter').slideToggle('fast');
+			$('.sort-target').removeClass("active");
+			$(this).toggleClass("active");
+			$('.filter-box.search').hide();
+		});
+		$('.sort-target').click(function () {
+			$('.filter-box.search').slideToggle('fast');
+			$('.filter-target').removeClass("active");
+			$(this).toggleClass("active");
+			$('.filter-box.filter').hide();
+		});
+	});
+</script>
+		
 
 
 </body>

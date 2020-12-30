@@ -58,12 +58,12 @@
 }
 
 
-.mv-list.active a{
+.mv-list.selected a{
     background: #DEE2E5;
     border: 1px solid #FFFFFF;
 }
 
-.mv-list.active a .mv-icon{
+.mv-list.selected a .mv-icon{
     background: #CCD3D6;
 }
 
