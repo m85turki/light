@@ -1,9 +1,13 @@
 
 /*----------------------- H New Style -------------------------*/
 /* For Light Style */
+body{
+    position: relative;
+}
 .img-back{
     background: url('../images/light/login-back.png') repeat-x top center #F3F3F6;
 }
+
 .img-back2{
     position: fixed;
     top: 50%;
@@ -28,6 +32,7 @@
 .another-card{
     box-shadow: 3px 3px 20px 7px #00000017;
     border-radius: 8px;
+    width:100%;
 }
 .another-card .card-body{
     padding: 1.25rem;
@@ -49,7 +54,13 @@
 }
 
 .changed-navbar{
-    padding-top: 250px !important;
+    position: fixed;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    
 }
 
 .signin-container .form-control{
