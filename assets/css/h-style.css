@@ -3675,6 +3675,9 @@ table > thead > tr {
     width:100%;
     left:0;
 }
+.warn-div{
+    font-size:28px;
+}
 
 
 }
