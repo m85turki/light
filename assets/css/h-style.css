@@ -373,7 +373,7 @@
 
 .btn-st5 {
     color: white;
-    background-color: #A99465;
+    background-color: #262B56;
 	border-radius: 7px;
 }
 
@@ -395,7 +395,7 @@
     .btn-st5:not(:disabled):not(.disabled):active, .btn-st5:not(:disabled):not(.disabled).active,
     .show > .btn-st2.dropdown-toggle {
         color: white;
-        background-color: #A99465;
+        background-color: #262B56;
     }
 .btn-st6{
     border: 1px solid #BD6C3E!important;
@@ -926,7 +926,7 @@ select {
     font-size: 12px;
 }
 .pagination.custom-pagination > li > span span.light-blue{
-	color:#A99465;
+	color:#262B56;
 	width: auto;
 	background-color: transparent;
 }
@@ -936,7 +936,7 @@ select {
 }
 
 .light-blue{
-	color:#A99465 !important;
+	color:#262B56 !important;
 }
 
 .pagination.custom-pagination > li > span{
@@ -1378,7 +1378,7 @@ a.white-notification .notification_sticky{
     
 .dropdown-menu>.active>a:hover{
 	background-color:#d3d4d8;
-	color:#A99465;
+	color:#262B56;
 }
 
 .treaty-name{
@@ -1643,19 +1643,19 @@ a.white-notification .notification_sticky{
     height: 50px;
     text-align: center;
     background-color: #F5F5F5;
-    border: 1px solid #A99465;
+    border: 1px solid #262B56;
     border-radius: 50%;
     display: inline-block;
     line-height: 50px;
     transition: all 0.2s;
     font-size: 24px;
-    color: #A99465;
+    color: #262B56;
 }
 
     .boardered-circle-transparent.active, .boardered-circle-transparent:hover {
-        background-color: #A99465;
+        background-color: #262B56;
         color: #FFF;
-        border-color: #A99465;
+        border-color: #262B56;
     }
 
 .options-list a.boardered-circle-transparent.active + a, .options-list a.boardered-circle-transparent:hover + a {
@@ -1746,7 +1746,7 @@ a.white-notification .notification_sticky{
 }
 
 .btn-site:hover {
-    color: #A99465 !important;
+    color: #262B56 !important;
     background-color: buttonface !important;
     border-color: #859c9f;
 }
@@ -1826,7 +1826,7 @@ div.checkbox {
     width: 1.3em;
     height: 1.3em;
     vertical-align: middle;
-	color:#a99465;
+	color:#262B56;
 }
 
 .radio .cr {
