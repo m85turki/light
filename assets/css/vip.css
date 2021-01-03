@@ -111,3 +111,29 @@ td.td-border-right {
     text-align: center;
     padding-top: 10px;
 }
+
+.alert_days_number{
+    background: #BE1E2D;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: #FFFFFF;
+    text-align: right;
+    padding: 7px 15px;
+    z-index: 9;
+    border-radius: 0px 6px 0px 6px;
+    line-height: 1.75rem;
+}
+
+    .alert_days_number .a_number{
+        font-size: 17pt;
+    }
+
+    .alert_days_number .a_days{
+        font-size: 12pt;
+    }
+
+
+    .refuse_reason{
+        color: #686B89;
+    }

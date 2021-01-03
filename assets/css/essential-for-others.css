@@ -502,7 +502,6 @@ h3.subtitle{
   }
   
   .d-flex-responsive .stretch-side{
-    position: relative;
     -ms-flex: 1 1 0%;
     flex: 1 1 0%;
     min-width: 0;
