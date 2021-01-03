@@ -928,7 +928,9 @@ select {
     color: black;
 }
 .pagination.custom-pagination .blues_border a{
-	border-color: #babfe0!important;
+    border-color: #262B56!important;
+    background: #262B56 !important;
+    color: #F3F3F6 !important;
 }
 .transparent_bg {
     background-color: transparent!important;
@@ -951,8 +953,8 @@ select {
 }
 
 .pagination.custom-pagination > li > span{
-	width: 30px;
-    height: 30px;
+	width: 27px;
+    height: 27px;
     border:0;
     text-align: center;
     padding: 0;
