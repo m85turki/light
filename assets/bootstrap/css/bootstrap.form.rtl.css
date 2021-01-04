@@ -1434,11 +1434,11 @@
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    padding: 0.375rem 0.75rem;
+    padding: 0.0rem 0.75rem;
     margin-bottom: 0;
-    font-size: 1rem;
+    font-size: 1.7rem;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 0.5;
     color: #495057;
     text-align: center;
     white-space: nowrap;

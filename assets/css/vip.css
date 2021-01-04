@@ -92,11 +92,6 @@
 
 /* Table */
 
-table > thead > tr {
-    color: #F9F9F9 !important;
-    background-color: #00A05A !important;
-}
-
 td.td-border-left {
     border-left: 1px solid #ddd;
 }
@@ -306,6 +301,11 @@ td.td-border-right {
 .white-container.with_shadow{
     box-shadow: 0 0px 10px 0 rgba(38, 43, 86, .28) !important;
     border: none;
+}
+
+.card.with_shadow{
+    box-shadow: 0 0px 10px 0 rgba(38, 43, 86, .28) !important;
+    border: none !important;
 }
 
 
