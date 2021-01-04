@@ -138,11 +138,11 @@ td.td-border-right {
         color: #686B89;
     }
 
-/* Wizard Style */
+/* Wizard Progressbar Style */
 
 
 .progressbar {
-    margin-bottom: 25px;
+    margin-bottom: 0px;
     padding: 0;
     overflow: hidden;
     counter-reset: step;
@@ -150,59 +150,157 @@ td.td-border-right {
     width: 100%;
 }
 
+.progressbar:before{
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    background-color:#262B56;
+    position: absolute;
+    right: 0;
+    bottom: 7px;
+    z-index: 0;
+}
+
+/* Arrow */
+.progressbar li.active:after {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    margin-right: -7px;
+
+    z-index: 2;
+    content: ' ';
+    display: block;
+    background-color:transparent;
+
+    -webkit-animation: effect 1s linear infinite;
+    animation: effect 1s linear infinite;
+
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #262B56;
+}
+
+.progressbar li.active:before {
+    position: absolute;
+    bottom: 1.5px;
+    right: 50%;
+    margin-right: -7px;
+
+    z-index: 3;
+    content: ' ';
+    display: block;
+    background-color:transparent;
+
+    -webkit-animation: effect 1s linear infinite;
+    animation: effect 1s linear infinite;
+
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #ededf3;
+}
+
+/* END Arrow*/
+
 
 .progressbar li {
     list-style-type: none;
-    font-size: 1rem;
     font-weight: 500;
     text-align: center;
-    /* width: 33.3333%; */
     float: left;
     position: relative;
-    color: #A1A4B4;
+    color: #DEDFE6;
+    padding-bottom: 10px;
 }
 
-.progressbar li.active:before, .progressbar li.active:after {
-    background:  #DF0B1B;
+.progressbar li a {
+    color:  #646786;
+    font-size: 14pt;
+}
+
+.progressbar li a:hover{
+    color:  #262B56;
+}
+
+.progressbar li.active a {
+    color:  #262B56;
+}
+
+
+/* 1 */
+.progressbar li.active .li-before, .progressbar li.active .li-after {
+    background:  #262B56;
     background-size: 200% auto;
     -webkit-animation: effect 1s linear infinite;
     animation: effect 1s linear infinite;
     color: #fff;
 }
 
-.progressbar li:before {
+.progressbar li:first-child .li-before {
+    display: none;
+}
+
+
+.progressbar li.done .li-before, .progressbar li.done .li-after {
+    background:  #262B56;
+    background-size: 200% auto;
+    -webkit-animation: effect 1s linear infinite;
+    animation: effect 1s linear infinite;
+    color: #fff;
+}
+
+
+.progressbar li.done .li-after {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+}
+
+    .progressbar li.done .li-after:after{
+        content: "\f00c" !important;
+    }
+
+.progressbar li .li-after {
     position: relative;
     z-index: 2;
-    content: counter(step);
-    counter-increment: step;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    content: ' ';
+    width: 20px;
+    height: 20px;
+    line-height: 21px;
     display: block;
     font-size: 1.2rem;
     font-weight: 600;
     text-align: center;
     color: #111111;
-    background-color: #A1A4B4;
+    background-color: #DEDFE6;
     border-radius: 100px;
     margin: 0 auto 10px auto;
 }
 
-.progressbar li:after {
+.progressbar li .li-before {
     content: '';
     width: 100%;
-    height: 6px;
-    background-color:  #A1A4B4;
+    height: 3px;
+    background-color:  #DEDFE6;
     position: absolute;
-    right: -50%;
-    top: 17px;
+    right: -52%;
+    bottom: 29px;
     z-index: 1;
 }
 
-.odd .progressbar li.active:before, .progressbar li.active:after {
-    color:  #DF0B1B;
+.odd .progressbar li.active .li-before, .progressbar li.active .li-after {
+    color:  #ffffff;
 }
 
-form[data-steps="3"] .progressbar li {
-    width: 33.3333%;
-}
+/* END 1*/
+
+
+
