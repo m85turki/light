@@ -345,22 +345,134 @@
 							<!-- Tab panes -->
 							<div class="tab-content">
 								<div role="tabpanel" class="tab-pane active" id="sub-tab-1">
-									<div class="white-container">
-										XXXXXXXXXXX
+									<div class="white-container with_shadow">
+										<form class="">
+											<div class="form-row">
+												<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+													<div class="form-row">
+														<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+															<label for="">رقم الصادر</label>
+															<input type="text" class="form-control" id="">
+														</div>
+														<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+															<label for="">تاريخ الصادر</label>
+															<input type="text" class="form-control" id="">
+														</div>
+														<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+															<label for="">الأسبقية</label>
+															<input type="text" class="form-control" id="">
+														</div>
+														<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+															<label for="">الأهمية</label>
+															<select class="form-control">
+																<option selected="">الكل</option>
+																<option>...</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+													<div class="form-row">
+													<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+														<label for="">الجهة<span class="red-color">*</span></label>
+														<div class="row">
+															<div class=" col-lg-3 col-md-4 col-sm-4 col-xs-5 pr-0">
+																<input placeholder="رقم الجهة" type="text" class="form-control">
+															</div>
+															<div class=" col-lg-9 col-md-8 col-sm-8 col-xs-7">
+																<div class="input-group">
+																	<input type="text" class="form-control" placeholder="اسم الجهة الصادرة ">
+																	<div class="input-group-append">
+																		<span class="input-group-text hyperlink white">
+																			<a href="#"><i class="icon-filter-form"></i></a>
+																		</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+														<label for="">الموضوع</label>
+														<textarea class="form-control" id="" rows="5"></textarea>
+													</div>
+													<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+														<label for="">الملاحظات</label>
+														<input type="text" class="form-control" id="">
+													</div>
+													</div>
+												</div>
+											</div>
+										</form>
+										<div class="collapse-input" id="accordion" >
+											<div class="panel">
+											  <div class="collapse-heading">
+												<h4 class="">
+												  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"  aria-controls="collapseOne">
+													الأرشفة
+												  </a>
+												</h4>
+											  </div>
+											  <div id="collapseOne" class="collapse in">
+												<div class="collapse-panel">
+												  محتوى الأرشفة
+												</div>
+											  </div>
+											</div>
+											<div class="panel">
+											  <div class="collapse-heading">
+												<h4 class="">
+												  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"  aria-controls="collapseTwo">
+													الربط
+												  </a>
+												</h4>
+											  </div>
+											  <div id="collapseTwo" class="collapse">
+												<div class="collapse-panel">
+												  محتوى الربط
+												</div>
+											  </div>
+											</div>
+											<div class="panel">
+											  <div class="collapse-heading" >
+												<h4 class="">
+												  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-controls="collapseThree">
+													النسخ
+												  </a>
+												</h4>
+											  </div>
+											  <div id="collapseThree" class="collapse">
+												<div class="collapse-panel">
+												  محتوى النسخ
+												</div>
+											  </div>
+											</div>
+											
+										  </div>
+								  
+									</div>
+									<div class="mx-1 mx-md-2 mb-4 d-flex">
+										<div class="mr-auto">
+											<button type="submit" class="btn btn-st1 mr-2">حفظ</button>
+											<button type="submit" class="btn btn-st2 mr-2">إرسال</button>
+										</div>
+										<div class="ml-auto">
+											<button type="submit" class="btn btn-st3 mr-2">طباعة باركود</button>
+											<button type="submit" class="btn btn-st3 mr-0">طباعة بيان التسليم</button>
+										</div>
 									</div>
 								</div>
 								<div role="tabpanel" class="tab-pane" id="sub-tab-2">
-									<div class="white-container">
+									<div class="white-container with_shadow">
 										22222
 									</div>
 								</div>
 								<div role="tabpanel" class="tab-pane" id="sub-tab-3">
-									<div class="white-container">
+									<div class="white-container with_shadow">
 										33333
 									</div>
 								</div>
 								<div role="tabpanel" class="tab-pane" id="sub-tab-4">
-									<div class="white-container">
+									<div class="white-container with_shadow">
 										44444
 									</div>
 								</div>
@@ -372,161 +484,6 @@
 		
 			</div>
 		
-
-		</div>
-	</div>
-	<!-- Modal -->
-	<div class="modal fade" id="myModal" role="dialog">
-		<div class="modal-dialog large-dialog">
-			<!-- Modal content-->
-			<div class="modal-content modal-height">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">×</button>
-
-					<div class="d-sm-flex d-block">
-						<div class="mr-auto mr-sm-5">
-							<h3 class="site-color main-title2">معاملات الصادر</h3>
-						</div>
-
-						<div class="">
-							<span class="gray4">التاريخ من <span class="d-block site-color">28 تشرين الثاني 2018
-									الأحد</span></span>
-						</div>
-						<div class="ml-auto ml-sm-5">
-							<span class="gray4">التاريخ إلى <span class="d-block site-color">28 تشرين الثاني 2018
-									الأحد</span></span>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="modal-body">
-					<div class="d-flex">
-						<h3 class="m-0 pb-2"> جدول المعاملات </h3>
-
-						<div class="gray2 ml-4"><span class="roundedred">4</span> معاملات</div>
-					</div>
-					<div class="table-responsive mt-2">
-						<table class="table table-bordered table-striped">
-							<thead>
-								<tr>
-									<th>رقم المعاملة</th>
-									<th>نوع المعاملة</th>
-									<th>
-
-										تاريخ الإنشاء
-										<i class="fas fa-sort arrows pl-3"></i>
-									</th>
-									<th>نوع الخطاب</th>
-									<th>درجة الأهمية</th>
-									<th>درجة السرية</th>
-									<th>التصنيف الموضوعي</th>
-									<th>وصف المعاملة</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>3254534553</td>
-									<td>صادر </td>
-									<td>11/11/2011</td>
-									<td>النوع 1</td>
-									<td>عادي</td>
-									<td>سري للغاية</td>
-									<td>تصنيف 1</td>
-									<td>وصف المعاملة وصف المعاملة</td>
-								</tr>
-								<tr>
-									<td>3254534553</td>
-									<td>صادر </td>
-									<td>11/11/2011</td>
-									<td>النوع 1</td>
-									<td>عادي</td>
-									<td>سري للغاية</td>
-									<td>تصنيف 1</td>
-									<td>وصف المعاملة وصف المعاملة</td>
-								</tr>
-								<tr>
-									<td>3254534553</td>
-									<td>صادر </td>
-									<td>11/11/2011</td>
-									<td>النوع 1</td>
-									<td>مهم جداً</td>
-									<td>سري للغاية</td>
-									<td>تصنيف 1</td>
-									<td>وصف المعاملة وصف المعاملة</td>
-								</tr>
-								<tr>
-									<td>3254534553</td>
-									<td>صادر </td>
-									<td>11/11/2011</td>
-									<td>النوع 1</td>
-									<td>عادي</td>
-									<td>سري للغاية</td>
-									<td>تصنيف 1</td>
-									<td>وصف المعاملة وصف المعاملة</td>
-								</tr>
-								<tr>
-									<td>3254534553</td>
-									<td>صادر </td>
-									<td>11/11/2011</td>
-									<td>النوع 1</td>
-									<td>عادي</td>
-									<td>سري للغاية</td>
-									<td>تصنيف 1</td>
-									<td>وصف المعاملة وصف المعاملة</td>
-								</tr>
-								<tr>
-									<td>3254534553</td>
-									<td>صادر </td>
-									<td>11/11/2011</td>
-									<td>النوع 1</td>
-									<td>عادي</td>
-									<td>سري للغاية</td>
-									<td>تصنيف 1</td>
-									<td>وصف المعاملة وصف المعاملة</td>
-								</tr>
-								<tr>
-									<td>3254534553</td>
-									<td>صادر </td>
-									<td>11/11/2011</td>
-									<td>النوع 1</td>
-									<td>عادي</td>
-									<td>سري للغاية</td>
-									<td>تصنيف 1</td>
-									<td>وصف المعاملة وصف المعاملة</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="w-100 text-center">
-						<nav aria-label="Page navigation">
-							<ul class="pagination custom-pagination">
-								<li class="change-page">
-									<a href="#" aria-label="Previous">
-										<i class="fa fa-caret-right"></i>
-									</a>
-								</li>
-								<li class="blues_border"><a href="#" class="transparent_bg">1</a></li>
-								<li><span class="transparent_bg font_size12"> من
-
-										<span class="light-blue pl-1">4</span>
-									</span>
-								</li>
-								<li class="change-page">
-									<a href="#" aria-label="Next">
-										<i class="fa fa-caret-left"></i>
-									</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-					<div class="text-right">
-							<button type="submit" class="btn btn-st1 btn-lg">طباعة</button>
-							<button type="submit" class="btn btn-st1 btn-lg ml-2">تصدير</button>
-					</div>
-
-				</div>
-			</div>
 
 		</div>
 	</div>

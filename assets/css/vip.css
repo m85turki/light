@@ -303,4 +303,41 @@ td.td-border-right {
 /* END 1*/
 
 
+.white-container.with_shadow{
+    box-shadow: 0 0px 10px 0 rgba(38, 43, 86, .28) !important;
+    border: none;
+}
+
+
+/* collapse-input */
+.collapse-input .collapse-heading h4 a {
+    color: #444;
+    text-decoration: none;
+    font-size: 14pt;
+    font-weight: normal;
+  }
+  
+  .collapse-input .collapse-heading h4 a::before{
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    
+    content: "\f068" ;
+
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 10px;
+    color: #444;
+  }
+  
+  .collapse-input .collapse-heading h4 a.collapsed::before{
+    content: "\f067" !important;
+  }
+  
+  
 

@@ -4172,8 +4172,17 @@ body.vertical-layout.vertical-overlay-menu.menu-open .main-menu .navigation > li
 }
 
 body.vertical-layout.vertical-menu.menu-expanded .main-menu .navigation li.has-sub > a:not(.mm-next):after {
-    content: '\f111';
-    font: normal normal normal 16px/1 LineAwesome;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+    
     font-size: 1rem;
     display: inline-block;
     position: absolute;
@@ -4184,7 +4193,9 @@ body.vertical-layout.vertical-menu.menu-expanded .main-menu .navigation li.has-s
     -ms-transform: rotate(0);
     -o-transform: rotate(0);
     transform: rotate(0);
-    transition: -webkit-transform .2s ease-in-out
+    transition: -webkit-transform .2s ease-in-out;
+    
+    content: "\f104";
 }
 
 body.vertical-layout.vertical-menu.menu-expanded .main-menu .navigation li.open > a:not(.mm-next):after {
@@ -4596,8 +4607,17 @@ body.vertical-layout.vertical-menu.menu-collapsed.menu-flipped .navbar .navbar-h
 }
 
 .vertical-overlay-menu .main-menu .navigation li.has-sub > a:not(.mm-next):after {
-    content: '\f111';
-    font: normal normal normal 16px/1 LineAwesome;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+    
     font-size: 1rem;
     display: inline-block;
     position: absolute;
@@ -4608,7 +4628,9 @@ body.vertical-layout.vertical-menu.menu-collapsed.menu-flipped .navbar .navbar-h
     -ms-transform: rotate(0);
     -o-transform: rotate(0);
     transform: rotate(0);
-    transition: -webkit-transform .2s ease-in-out
+    transition: -webkit-transform .2s ease-in-out;
+    
+    content: "\f104";
 }
 
 .vertical-overlay-menu .main-menu .navigation li.open > a:not(.mm-next):after {
