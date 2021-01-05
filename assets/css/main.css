@@ -1647,7 +1647,7 @@ color:#ff3636;
 .table>thead>tr>td,
 .table>thead>tr>th 
 {
-    border-color: #E7E7E7;
+    border-color: #262B56;
     white-space: normal;
 }
 .table.table-striped > thead > tr {
@@ -1655,7 +1655,7 @@ color:#ff3636;
     background-color: #fff;
 }
 .table.table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: #F5F5F5;
+    background-color: #E9E9EE;
 }
 .table.table-striped > tbody > tr td{
     color: #4A4A4A;
