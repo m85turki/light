@@ -347,36 +347,49 @@
 												<input type="password" class="form-control" id="">
 											</div>
 											<div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12">
-												<label for="">إسم المستخدم</label>
-												<input type="text" class="form-control" id="">
+												<label for="">تعيين كلمة المرور</label>
+												<div>
+													<div class="custom-control custom-checkbox custom-control-inline">
+														<input type="checkbox" id="1" name="1" class="custom-control-input">
+														<label class="custom-control-label" for="1">إعادة تعيين كلمة المرور</label>
+													</div>
+												</div>
 											</div>
 										</div>
 										<div class="form-row">
 											<div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12">
-												<label for="">تاريخ الصادر</label>
-												<div class="input-group">
-													<input type="text" class="form-control" placeholder="">
-													<div class="input-group-append">
-														<span class="input-group-text hyperlink white">
-															<a href="#"><i class="las la-calendar-week"></i></i></a>
-														</span>
-													</div>
-												</div>
-											</div>
-											<div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12">
-												<label for="">الأسبقية</label>
+												<label for="">رخصة الإستخدام</label>
 												<input type="text" class="form-control" id="">
 											</div>
 											<div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12">
-												<label for="">الأهمية</label>
-												<select class="form-control">
-													<option selected="">الكل</option>
-													<option>...</option>
-												</select>
+												<label for="">الإيميل</label>
+												<input type="text" class="form-control" id="">
+											</div>
+											<div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12">
+												<label for="">الجوال</label>
+												<input type="text" class="form-control" id="">
+											</div>
+											<div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12">
+												<label for="">السرية</label>
+												<div class="">
+													<div class="custom-control custom-radio custom-control-inline">
+													  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+													  <label class="custom-control-label" for="customRadioInline1">سري</label>
+													</div>
+													<div class="custom-control custom-radio custom-control-inline">
+													  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+													  <label class="custom-control-label" for="customRadioInline2">عادي</label>
+													</div>
+												</div>
 											</div>
 										</div>
 									</form>
-			
+									<div class="mx-1 mx-md-2 mb-4 d-flex flex-column flex-md-row ">
+										<div class="ml-0 ml-md-auto mb-2 mb-md-0">
+											<button type="submit" class="btn btn-st1 mr-2">حفظ</button>
+										</div>
+									</div>
+				
 								</div>
 							  </div>
 							</div>
@@ -384,13 +397,13 @@
 							  <div class="collapse-heading">
 								<h4 class="">
 								  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"  aria-controls="collapseTwo">
-									الربط
+									ترميز الجهة
 								  </a>
 								</h4>
 							  </div>
 							  <div id="collapseTwo" class="collapse">
 								<div class="collapse-panel">
-								  محتوى الربط
+								  محتوى ترميز الجهة
 								</div>
 							  </div>
 							</div>
@@ -398,13 +411,55 @@
 							  <div class="collapse-heading" >
 								<h4 class="">
 								  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-controls="collapseThree">
-									النسخ
+									الباركود
 								  </a>
 								</h4>
 							  </div>
 							  <div id="collapseThree" class="collapse">
 								<div class="collapse-panel">
-								  محتوى النسخ
+								  محتوى الباركود
+								</div>
+							  </div>
+							</div>
+							<div class="panel">
+							  <div class="collapse-heading" >
+								<h4 class="">
+								  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-controls="collapseFour">
+									اضافة الشعار
+								  </a>
+								</h4>
+							  </div>
+							  <div id="collapseFour" class="collapse">
+								<div class="collapse-panel">
+								  محتوى اضافة الشعار
+								</div>
+							  </div>
+							</div>
+							<div class="panel">
+							  <div class="collapse-heading" >
+								<h4 class="">
+								  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-controls="collapseFive">
+									رخص الإستخدام
+								  </a>
+								</h4>
+							  </div>
+							  <div id="collapseFive" class="collapse">
+								<div class="collapse-panel">
+								  محتوى رخص الإستخدام
+								</div>
+							  </div>
+							</div>
+							<div class="panel">
+							  <div class="collapse-heading" >
+								<h4 class="">
+								  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-controls="collapseSix">
+									الصلاحيات
+								  </a>
+								</h4>
+							  </div>
+							  <div id="collapseSix" class="collapse">
+								<div class="collapse-panel">
+								  محتوى الصلاحيات
 								</div>
 							  </div>
 							</div>
@@ -414,12 +469,7 @@
 					</div>
 					<div class="mx-1 mx-md-2 mb-4 d-flex flex-column flex-md-row ">
 						<div class="mr-0 mr-md-auto mb-2 mb-md-0">
-							<button type="submit" class="btn btn-st3 mr-2">حفظ</button>
-							<button type="submit" class="btn btn-st2 mr-2">إرسال</button>
-						</div>
-						<div class="ml-0 ml-md-auto mb-2 mb-md-0">
-							<button type="submit" class="btn btn-st1 mr-2">طباعة باركود</button>
-							<button type="submit" class="btn btn-st1 mr-0">طباعة بيان التسليم</button>
+							<button type="submit" class="btn btn-st3 mr-2">حفظ جميع الإعدادات</button>
 						</div>
 					</div>
 
