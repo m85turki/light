@@ -339,5 +339,10 @@ td.td-border-right {
     content: "\f067" !important;
   }
   
+
+  svg text tspan, .apexcharts-xaxistooltip .apexcharts-xaxistooltip-text, .apexcharts-tooltip .apexcharts-tooltip-title, .apexcharts-tooltip .apexcharts-tooltip-text, .apexcharts-legend-series .apexcharts-legend-text {
+    font-family: 'FSAlbertArabic' !important;
+  }
+
   
 

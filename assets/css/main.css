@@ -116,6 +116,10 @@ display: block;
     text-decoration: none;
 }
 
+.h-side a.connected{
+    color: #39B54A;
+}
+
 
 .h-side a:hover{
     color: #27A8E0;
